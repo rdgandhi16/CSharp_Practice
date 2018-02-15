@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db_28decModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="db_28decModelStoreContainer">
+          <EntitySet Name="tbl_city" EntityType="db_28decModel.Store.tbl_city" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_state" EntityType="db_28decModel.Store.tbl_state" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__tbl_city__sid__07F6335A" Association="db_28decModel.Store.FK__tbl_city__sid__07F6335A">
+            <End Role="tbl_state" EntitySet="tbl_state" />
+            <End Role="tbl_city" EntitySet="tbl_city" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_city">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Name="cid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="cityname" Type="varchar" MaxLength="50" />
+          <Property Name="sid" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_state">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="statename" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__tbl_city__sid__07F6335A">
+          <End Role="tbl_state" Type="db_28decModel.Store.tbl_state" Multiplicity="0..1" />
+          <End Role="tbl_city" Type="db_28decModel.Store.tbl_city" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_state">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_city">
+              <PropertyRef Name="sid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_28decModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="db_28decEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_state" EntityType="db_28decModel.tbl_state" />
+          <EntitySet Name="tbl_city" EntityType="db_28decModel.tbl_city" />
+          <AssociationSet Name="FK__tbl_city__sid__07F6335A" Association="db_28decModel.FK__tbl_city__sid__07F6335A">
+            <End Role="tbl_state" EntitySet="tbl_state" />
+            <End Role="tbl_city" EntitySet="tbl_city" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_state">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="statename" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tbl_city" Relationship="db_28decModel.FK__tbl_city__sid__07F6335A" FromRole="tbl_state" ToRole="tbl_city" />
+        </EntityType>
+        <EntityType Name="tbl_city">
+          <Key>
+            <PropertyRef Name="cid" />
+          </Key>
+          <Property Type="Int32" Name="cid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="cityname" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="sid" />
+          <NavigationProperty Name="tbl_state" Relationship="db_28decModel.FK__tbl_city__sid__07F6335A" FromRole="tbl_city" ToRole="tbl_state" />
+        </EntityType>
+        <Association Name="FK__tbl_city__sid__07F6335A">
+          <End Type="db_28decModel.tbl_state" Role="tbl_state" Multiplicity="0..1" />
+          <End Type="db_28decModel.tbl_city" Role="tbl_city" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_state">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_city">
+              <PropertyRef Name="sid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_28decModelStoreContainer" CdmEntityContainer="db_28decEntities">
+          <EntitySetMapping Name="tbl_state">
+            <EntityTypeMapping TypeName="db_28decModel.tbl_state">
+              <MappingFragment StoreEntitySet="tbl_state">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="statename" ColumnName="statename" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_city">
+            <EntityTypeMapping TypeName="db_28decModel.tbl_city">
+              <MappingFragment StoreEntitySet="tbl_city">
+                <ScalarProperty Name="sid" ColumnName="sid" />
+                <ScalarProperty Name="cityname" ColumnName="cityname" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

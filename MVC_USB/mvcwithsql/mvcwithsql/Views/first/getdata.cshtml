@@ -1,0 +1,130 @@
+﻿@*@model IEnumerable<mvcwithsql.Models.first>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>getdata</title>
+</head>
+<body>
+    <div>
+        <table>
+            @foreach (var item in Model)
+            {
+             
+                <tr>
+                    <td>
+                        @Html.DisplayFor(v=>item.id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(v=>item.fname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(v=>item.lname)
+                    </td>
+                </tr>   
+            }
+
+        </table>
+    </div>
+</body>
+</html>*@
+
+
+
+
+
+@model IEnumerable<mvcwithsql.Models.first>
+
+
+
+@{
+
+    ViewBag.Title = "grid";
+
+    WebGrid grid = new WebGrid(Model, rowsPerPage: 3);
+
+}
+
+<h2>Grid</h2>
+
+<style type="text/css">
+    .table {
+        margin: 4px;
+        border-collapse: collapse;
+        width: 300px;
+    }
+
+    .header {
+        background-color: gray;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .table th, .table td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+</style>
+
+
+
+@grid.GetHtml(
+
+
+
+    tableStyle: "table", // applying style on grid
+
+
+
+    fillEmptyRows: true,
+
+    //show empty row when there is only one record on page to it will display all empty rows there.       
+
+    headerStyle: "header", //applying style.
+
+
+
+    footerStyle: "grid-footer", //applying style.
+
+
+
+    mode: WebGridPagerModes.All, //paging to grid 
+
+    firstText: "<< First",
+
+    previousText: "< Prev",
+
+    nextText: "Next >",
+
+    lastText: "Last >>",
+
+
+
+    columns: new[]  // colums in grid
+
+    {
+
+        grid.Column("id"), //the model fields to display
+
+        grid.Column("fname"  ),
+
+        grid.Column("lname"),
+
+        //grid.Column("ProductDate"),
+
+        //grid.Column("ProductGrade"),
+
+        //grid.Column("ProductMfg"),
+
+  grid.Column(format: (item) => Html.ActionLink("Edit", "Edit", new { id = item.id }), style: "column-action"), 
+  grid.Column(format: (item) => Html.ActionLink("Delete", "delete", new { id = item.id }), style: "column-action") 
+
+   }
+   )
+

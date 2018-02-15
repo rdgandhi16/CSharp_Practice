@@ -1,0 +1,5 @@
+G:\C#.net\LogicQuestionPractice\Short\bin\Debug\Short.exe.config
+G:\C#.net\LogicQuestionPractice\Short\bin\Debug\Short.exe
+G:\C#.net\LogicQuestionPractice\Short\bin\Debug\Short.pdb
+G:\C#.net\LogicQuestionPractice\Short\obj\Debug\Short.exe
+G:\C#.net\LogicQuestionPractice\Short\obj\Debug\Short.pdb

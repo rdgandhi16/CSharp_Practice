@@ -1,0 +1,62 @@
+﻿@model IEnumerable< mvcallcntrl.Models.first>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>getdata</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Firstname</td>
+                <td>Password</td>
+                <td>Gender</td>
+                <td>Hobby</td>
+                <td>State</td>
+                <td>Image</td>
+            </tr>
+
+           @foreach (var item in Model)
+           {
+               <tr>
+
+                   <td>
+                       @Html.DisplayFor(v=>item.id)
+                   </td> 
+                    <td>
+                       @Html.DisplayFor(v=>item.fname)
+                   </td>
+
+                     <td>
+                       @Html.DisplayFor(v=>item.password)
+                   </td>
+                     <td>
+                       @Html.DisplayFor(v=>item.gender)
+                   </td>
+                     <td>
+                       @Html.DisplayFor(v=>item.hobby)
+                   </td>
+                     <td>
+                       @Html.DisplayFor(v=>item.state)
+                   </td>
+                     <td>
+                      <img src="@Url.Content(item.img)" height="50px" width="50px" />
+                   </td>
+               </tr>
+               
+           }
+
+
+        </table>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+E:\NOVbatch16\otheroopsconcept25dec\otheroopsconcept25dec\bin\Debug\otheroopsconcept25dec.exe
+E:\NOVbatch16\otheroopsconcept25dec\otheroopsconcept25dec\bin\Debug\otheroopsconcept25dec.pdb
+E:\NOVbatch16\otheroopsconcept25dec\otheroopsconcept25dec\obj\x86\Debug\otheroopsconcept25dec.exe
+E:\NOVbatch16\otheroopsconcept25dec\otheroopsconcept25dec\obj\x86\Debug\otheroopsconcept25dec.pdb

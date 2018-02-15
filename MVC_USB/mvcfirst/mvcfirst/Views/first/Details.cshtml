@@ -1,0 +1,30 @@
+﻿@model mvcfirst.Models.first
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>first</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lname)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "getdata")
+</p>

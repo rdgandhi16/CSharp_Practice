@@ -1,0 +1,4 @@
+E:\NOVbatch16\otheroopsconcept25dec\generic\bin\Debug\generic.exe
+E:\NOVbatch16\otheroopsconcept25dec\generic\bin\Debug\generic.pdb
+E:\NOVbatch16\otheroopsconcept25dec\generic\obj\x86\Debug\generic.exe
+E:\NOVbatch16\otheroopsconcept25dec\generic\obj\x86\Debug\generic.pdb

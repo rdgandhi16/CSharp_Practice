@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_28decModelStoreContainer" CdmEntityContainer="db_28decEntities">
+    <EntitySetMapping Name="tbl_all">
+      <EntityTypeMapping TypeName="db_28decModel.tbl_all">
+        <MappingFragment StoreEntitySet="tbl_all">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="hobby" ColumnName="hobby" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="img" ColumnName="img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

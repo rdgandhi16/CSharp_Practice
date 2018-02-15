@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_28dec" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=PC-PC2\SQL2008;Initial Catalog=db_28dec;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="db_28decConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_reg" Member="tbl_regs">
+    <Type Name="tbl_reg">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_state" Member="tbl_states">
+    <Type Name="tbl_state">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="statename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_state_tbl_city" Member="tbl_cities" ThisKey="id" OtherKey="sid" Type="tbl_city" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_city" Member="tbl_cities">
+    <Type Name="tbl_city">
+      <Column Name="cid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cityname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_state_tbl_city" Member="tbl_state" ThisKey="sid" OtherKey="id" Type="tbl_state" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_insert_linq" Method="sp_insert_linq">
+    <Parameter Name="fn" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ln" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_display_linq" Method="sp_display_linq">
+    <ElementType Name="sp_display_linqResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_update_linq" Method="sp_update_linq">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fn" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ln" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_delete_linq" Method="sp_delete_linq">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

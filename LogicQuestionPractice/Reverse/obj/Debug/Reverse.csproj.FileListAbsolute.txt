@@ -1,0 +1,5 @@
+G:\C#.net\LogicQuestionPractice\Reverse\bin\Debug\Reverse.exe.config
+G:\C#.net\LogicQuestionPractice\Reverse\bin\Debug\Reverse.exe
+G:\C#.net\LogicQuestionPractice\Reverse\bin\Debug\Reverse.pdb
+G:\C#.net\LogicQuestionPractice\Reverse\obj\Debug\Reverse.exe
+G:\C#.net\LogicQuestionPractice\Reverse\obj\Debug\Reverse.pdb

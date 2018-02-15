@@ -1,0 +1,43 @@
+﻿@model mvcexam.Models.category
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addcat</title>
+</head>
+<body>
+    <div align="center">
+        @using(Html.BeginForm())
+        {
+        <table>
+            <tr>
+                <td>
+                     Category Name:
+                </td>
+                <td>
+
+                    @Html.TextBoxFor(v => v.cname)
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td> 
+
+                    <input type="submit" name="addcat" value="ADD" />
+                </td>
+
+            </tr>
+
+        </table>
+        }
+    </div>
+</body>
+</html>

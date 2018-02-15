@@ -1,0 +1,66 @@
+﻿@model MVC_EXAM.Models.pclass
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addproduct</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("addproduct", "user", FormMethod.Post, new {enctype="multipart/form-data" }))
+        {
+            <table align="center" border="1">
+                <tr>
+                    <td>
+                        Product Name:
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(v=>v.pname)
+                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        Product Category:
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(v=>v.catid,new SelectList(ViewBag.cat,"value","text"),"select category")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pprice:
+                    </td>
+                    <td>@Html.TextBoxFor(v=>v.pprice)</td>
+                </tr>
+                <tr>
+                    <td>
+                        Pdetail:
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(v=>v.pdetail)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PImage:
+                    </td>
+                    <td>
+                        <input type="file" name="file1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

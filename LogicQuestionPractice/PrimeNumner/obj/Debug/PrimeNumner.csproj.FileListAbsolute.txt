@@ -1,0 +1,6 @@
+G:\C#.net\LogicQuestionPractice\PrimeNumner\bin\Debug\PrimeNumner.exe.config
+G:\C#.net\LogicQuestionPractice\PrimeNumner\bin\Debug\PrimeNumner.exe
+G:\C#.net\LogicQuestionPractice\PrimeNumner\bin\Debug\PrimeNumner.pdb
+G:\C#.net\LogicQuestionPractice\PrimeNumner\obj\Debug\PrimeNumner.csprojResolveAssemblyReference.cache
+G:\C#.net\LogicQuestionPractice\PrimeNumner\obj\Debug\PrimeNumner.exe
+G:\C#.net\LogicQuestionPractice\PrimeNumner\obj\Debug\PrimeNumner.pdb

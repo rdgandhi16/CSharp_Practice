@@ -1,0 +1,20 @@
+﻿@model IEnumerable< mvcexam.Models.product>
+
+<table align="center">
+    @foreach (var item in Model)
+	{
+	    <tr>
+            <td>
+                 @Html.DisplayFor(v =>item.pname)
+            </td>
+               
+           
+            <td>
+                <img src="@Url.Content(item.pimage)" height="50px" width="50px" />
+            </td>
+        </tr>
+        
+        
+    }        
+</table>
+

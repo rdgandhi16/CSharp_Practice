@@ -1,0 +1,85 @@
+﻿@model dropdownbind.Models.ddl
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/Content/themes/base/accordion.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/all.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/autocomplete.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/base.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/button.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/core.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/dialog.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/draggable.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/menu.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/progressbar.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/resizable.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/selectable.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/selectmenu.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/slider.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/sortable.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/spinner.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/tabs.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/theme.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/tooltip.css" rel="stylesheet" />
+    <script src="~/js/jquery-1.7.1.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#stateid").change(function () {
+
+                $('#cityid').empty();
+                $("#cityid").append("<option>--Select City--</option>");
+
+                var sid = $("#stateid").val();
+
+                $.ajax({
+                    type: "Get",
+                    url: "/state/citybyid",
+                    datatype: "Json",
+                    data: { "id": sid },
+                    success: function (mydata) {
+
+                        $.each(mydata
+                       , function (index, abc) {
+                           $("#cityid").append('<option value=' + abc.Value + '>' + abc.Text + '</option>')
+
+                       })
+
+                    },
+
+                });
+
+            });
+
+        });
+
+    </script>
+      <script type="text/javascript">
+          alert("string");
+          $(function () {
+              $("#cityname").datepicker();
+          });
+  </script>
+</head>
+<body>
+    <div align="center">
+        @Html.DropDownListFor(v=>v.stateid,new SelectList(ViewBag.state,"Value","Text"),"--Select State--")
+        <br />
+        @Html.DropDownListFor(v => v.cityid, new SelectList(string.Empty,"value","text"),"--Select City")
+
+        @Html.TextBoxFor(v=>v.cityname)
+    </div>
+</body>
+</html>

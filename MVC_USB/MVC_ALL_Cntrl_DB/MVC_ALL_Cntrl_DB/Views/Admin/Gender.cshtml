@@ -1,0 +1,36 @@
+﻿@model MVC_ALL_Cntrl_DB.Models.admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Gender</title>
+</head>
+<body>
+    <div align="center">
+        @using (Html.BeginForm())
+        {
+            <table border="1">
+                <tr>
+                    <td>Gender:
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(v => v.genname)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="sub" value="ADD GENDER" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

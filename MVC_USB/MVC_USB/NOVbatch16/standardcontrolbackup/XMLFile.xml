@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>http://localhost:1040/standardcontrolbackup/Desert.jpg</ImageUrl>
+    <NavigateUrl>https://www.google.co.in</NavigateUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:1040/standardcontrolbackup/Lighthouse.jpg</ImageUrl>
+    <NavigateUrl>https://www.google.co.in</NavigateUrl>
+  </Ad>
+</Advertisements>

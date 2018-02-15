@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="HtmlPage2.html" oninput="x.value=parseint(a.value)" method="post">
+        <table align="center">
+            <tr>
+                <td>
+                    <label for="fname">Full Name</label>
+                </td>
+                <td>
+                    <input type="text" id="fname" placeholder="Last and First Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="eid">Employee ID</label>
+                </td>
+                <td>
+                    <input type="text" id="eid" pattern="[a-z][0-9]{4}" placeholder="1 letter +4 Numbers" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Experiance(0-20)
+                </td>
+                <td>
+                    <input type="range" value="50"/>100+=
+                    <output name="x" for="a"></output>
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth
+                </td>
+                <td>
+                    <input type="date" name="DOB" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Joining Month
+                </td>
+                <td>
+                    <input type="month" name="jmonth" min="2000" max="2017" />
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile Number
+                </td>
+                <td>
+                    <input type="tel" name="mno" value="" required="required" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID </td>
+                <td>
+                    <input type="email" list="choices" name="eid" />
+                    <datalist id="choices">
+
+                        <option label="Rinkal Gandhi" value="rinkal.gandhi87@yahoo.com"></option>
+                        <option label="Roni" value="gandhi.rinkal@gmail.com"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>URL
+                </td>
+                <td>
+                    <input type="url" name="siteurl" value="" />
+                </td>
+            </tr>
+            <td>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Save" name="submit" />
+                </td>
+            </td>
+        </table>
+    </form>
+</body>
+</html>

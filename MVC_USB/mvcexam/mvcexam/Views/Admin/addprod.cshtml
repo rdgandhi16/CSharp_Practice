@@ -1,0 +1,62 @@
+﻿@model mvcexam.Models.product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addprod</title>
+</head>
+<body>
+    <div align="center">
+        @using(Html.BeginForm("addprod","admin",FormMethod.Post,new {enctype="multipart/form-data"}))
+        {
+            <table>
+                <tr>
+                    <td>Product Name:</td>
+                    <td>
+                        @Html.TextBoxFor(v => v.pname)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Product category:</td>
+                    <td>
+                        @Html.DropDownListFor(v=>v.catid,new SelectList(ViewBag.cat,"value","text"),"Select Category")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product Price:</td>
+                    <td>
+                        @Html.TextBoxFor(v => v.pprice)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Product Details:</td>
+                    <td>
+                        @Html.TextBoxFor(v => v.pdetails)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Product Image:</td>
+                    <td>
+                        <input type="file" name="file1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="Add" value="ADD" />
+                    </td>
+                </tr>
+            </table>
+        }    
+    </div>
+</body>
+</html>

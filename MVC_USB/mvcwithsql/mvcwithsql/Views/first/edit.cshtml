@@ -1,0 +1,47 @@
+﻿@model mvcwithsql.Models.first
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>edit</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(v => Model.id)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(v => Model.fname)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.TextBoxFor(v => Model.lname)
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="up" value="Update" />
+
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>}
+</body>
+</html>

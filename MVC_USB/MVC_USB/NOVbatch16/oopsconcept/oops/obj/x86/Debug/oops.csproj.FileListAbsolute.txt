@@ -1,0 +1,4 @@
+E:\NOVbatch16\oopsconcept\oops\bin\Debug\oops.exe
+E:\NOVbatch16\oopsconcept\oops\bin\Debug\oops.pdb
+E:\NOVbatch16\oopsconcept\oops\obj\x86\Debug\oops.exe
+E:\NOVbatch16\oopsconcept\oops\obj\x86\Debug\oops.pdb

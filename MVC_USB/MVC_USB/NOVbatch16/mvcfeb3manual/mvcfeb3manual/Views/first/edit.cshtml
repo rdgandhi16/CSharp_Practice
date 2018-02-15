@@ -1,0 +1,28 @@
+﻿@model mvcfeb3manual.Models.first
+
+@{
+    ViewBag.Title = "edit";
+}
+
+<h2 align="center">edit</h2>
+@using (Html.BeginForm())
+{
+<table align="center" border="1">
+    <tr>
+        <td>Firstname:</td>
+        <td>@Html.TextBoxFor(v => Model.fname)</td>
+    </tr>
+
+    <tr>
+        <td>LastNme:</td>
+        <td>@Html.TextBoxFor(v => Model.lname)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" name="sub" value="Update" />
+            @Html.ActionLink("Cancel","getdata")
+        </td>
+    </tr>
+</table>
+}

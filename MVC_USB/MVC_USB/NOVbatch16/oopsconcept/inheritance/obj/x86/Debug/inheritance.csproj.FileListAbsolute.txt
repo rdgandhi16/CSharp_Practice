@@ -1,0 +1,4 @@
+E:\NOVbatch16\oopsconcept\inheritance\bin\Debug\inheritance.exe
+E:\NOVbatch16\oopsconcept\inheritance\bin\Debug\inheritance.pdb
+E:\NOVbatch16\oopsconcept\inheritance\obj\x86\Debug\inheritance.exe
+E:\NOVbatch16\oopsconcept\inheritance\obj\x86\Debug\inheritance.pdb

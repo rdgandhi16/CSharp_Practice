@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <h2>Online Shopping</h2>
+             <table>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" NavigateUrl="#" runat="server">Home</asp:HyperLink>
+                    </td>
+                    <td></td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink2" NavigateUrl="showproduct.aspx" runat="server">Product</asp:HyperLink>
+                       
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="cart.aspx">Cart</asp:HyperLink>
+                    </td>
+            
+        </div>
+    <div>
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

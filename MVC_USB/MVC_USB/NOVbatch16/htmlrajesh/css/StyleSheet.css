@@ -1,0 +1,28 @@
+﻿p
+{
+    color: Red;
+    font-family: Times New Roman;
+}
+
+.c1
+{
+    color: Gold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.c2
+{
+    color:Green;
+}
+
+#id1
+{
+    color: Orange;
+    text-decoration: underline;
+    font-size: 10px;
+}
+#id2
+{
+   text-decoration: underline;
+    font-size: 10px; 
+}

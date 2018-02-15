@@ -1,0 +1,76 @@
+﻿@model mvcallcntrl.Models.first
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>edit</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("edit", "first", FormMethod.Post, new { enctype="multipart/form-data" }))
+        {
+          <table border="1" cellspacing="10" cellpadding="10" align="center">
+            <tr>
+                <td>Firstname:
+                </td>
+                <td>
+                    @Html.TextBoxFor(v => Model.fname)
+                </td>
+            </tr>
+            <tr>
+                <td>Password:
+                </td>
+                <td>
+                    @Html.TextBoxFor(v => Model.password)
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:
+                </td>
+                <td>
+                    @Html.RadioButtonFor(v => Model.gender, "Male") Male
+                    @Html.RadioButtonFor(v => Model.gender, "Female") Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby:
+                </td>
+                <td>
+                    @Html.CheckBoxFor(v => Model.cric, "Cric") Cricket
+                    @Html.CheckBoxFor(v => Model.foot, "Foot") Football
+                    @Html.CheckBoxFor(v => Model.Hockey, "Hockey") Hockey
+                </td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    @*   @Html.DropDownListFor(v=>v.state,ViewBag.state as SelectList)
+                *@
+                    @Html.DropDownListFor(v => Model.state, ViewBag.state as SelectList)
+                </td>
+            </tr>
+            <tr>
+                <td>Image:
+                </td>
+                <td>
+                    <img src="@Url.Content(Model.img)" height="50px" width="50px" />
+                    <input type="file" name="file1" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="sub" value="Update" />
+                </td>
+            </tr>
+        </table>
+        }
+    </div>
+</body>
+</html>

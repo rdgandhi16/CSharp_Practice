@@ -1,0 +1,33 @@
+﻿@model mvcfeb3manual.Models.first
+
+@{
+    ViewBag.Title = "Insert";
+}
+<div  style="text-align:center">
+    @Html.ActionLink("SHOW","getdata")
+<h2>Insert</h2>
+   @using (Html.BeginForm())
+   {
+<table align="center" cellpadding="10" border="1" cellspacing="10" >
+    <tr>
+        <td>Firstname:</td>
+        <td>
+            @Html.TextBoxFor(v => v.fname)
+        </td>
+    </tr>
+    <tr>
+        <td>LastName:
+        </td>
+        <td>
+            @Html.TextBoxFor(v => v.lname)
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td> <input type="submit" name="submit" value="SAVE" />
+            @ViewBag.msg
+        </td>
+    </tr>
+</table>
+   }
+</div>

@@ -1,0 +1,25 @@
+﻿@model mvcwithsql.Models.first
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @Html.ActionLink("Show","getdata")
+    @using(Html.BeginForm()){
+    <div>
+        Fname:@Html.TextBoxFor(v=>v.fname)<br />
+        Lname:@Html.TextBoxFor(v=>v.lname)<br />
+        <input type="submit" name="sub" value="Save" />
+        
+    </div>
+    }
+</body>
+</html>

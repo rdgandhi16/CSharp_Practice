@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_28dec" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=PC-PC2\SQL2008;Initial Catalog=db_28dec;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="db_28decConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_state" Member="tbl_states">
+    <Type Name="tbl_state">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="statename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_state_tbl_city" Member="tbl_cities" ThisKey="id" OtherKey="sid" Type="tbl_city" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_city" Member="tbl_cities">
+    <Type Name="tbl_city">
+      <Column Name="cid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cityname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_state_tbl_city" Member="tbl_state" ThisKey="sid" OtherKey="id" Type="tbl_state" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_linq_join" Member="tbl_linq_joins">
+    <Type Name="tbl_linq_join">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="stateid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

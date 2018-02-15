@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcfeb3manual", "mvcfeb3manual\mvcfeb3manual.csproj", "{F9E7FFE8-36A9-4C34-A1D1-CC3F13B1B8F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9E7FFE8-36A9-4C34-A1D1-CC3F13B1B8F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E7FFE8-36A9-4C34-A1D1-CC3F13B1B8F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E7FFE8-36A9-4C34-A1D1-CC3F13B1B8F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E7FFE8-36A9-4C34-A1D1-CC3F13B1B8F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

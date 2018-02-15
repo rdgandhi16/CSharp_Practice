@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MVC_ALL_Cntrl_DB.Models.admin>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>pv_gender</title>
+</head>
+<body>
+    <div>
+        <table>
+
+            <tr>
+
+                <td>
+                    @foreach (var item in Model)
+                    {
+                        @Html.RadioButtonFor(v => item.genname, "gen") @item.genname
+                        
+                    }
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

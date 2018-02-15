@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_mvc_vishModelStoreContainer" CdmEntityContainer="db_mvc_vishEntities">
+    <EntitySetMapping Name="tbl_gender">
+      <EntityTypeMapping TypeName="db_mvc_vishModel.tbl_gender">
+        <MappingFragment StoreEntitySet="tbl_gender">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_hobby">
+      <EntityTypeMapping TypeName="db_mvc_vishModel.tbl_hobby">
+        <MappingFragment StoreEntitySet="tbl_hobby">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="hobby" ColumnName="hobby" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_state">
+      <EntityTypeMapping TypeName="db_mvc_vishModel.tbl_state">
+        <MappingFragment StoreEntitySet="tbl_state">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="statename" ColumnName="statename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_subject">
+      <EntityTypeMapping TypeName="db_mvc_vishModel.tbl_subject">
+        <MappingFragment StoreEntitySet="tbl_subject">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<mvcfeb3manual.Models.first>
+
+@{
+    ViewBag.Title = "getdata";
+}
+<div align="center">
+    <h2>Display</h2>
+
+    <table border="1">
+        <tr>
+
+            <td>Firstname</td>
+            <td>LastName</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+      
+            <tr>
+                <td>@Html.DisplayFor(v =>item.fname )</td>
+                <td>@Html.DisplayFor(v => item.lname) </td>
+                <td> @Html.ActionLink("Edit", "edit", new { id=item.id }) </td>
+                <td> @Html.ActionLink("Delete", "delete", new { id=item.id }) </td>
+
+            </tr>
+        }
+    </table>
+
+
+</div>

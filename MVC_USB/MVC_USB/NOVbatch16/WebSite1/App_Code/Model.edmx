@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_rajeshModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="db_rajeshModelStoreContainer">
+          <EntitySet Name="tbl_country" EntityType="db_rajeshModel.Store.tbl_country" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_rajesh" EntityType="db_rajeshModel.Store.tbl_rajesh" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_state" EntityType="db_rajeshModel.Store.tbl_state" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_tbl_state_tbl_country" Association="db_rajeshModel.Store.FK_tbl_state_tbl_country">
+            <End Role="tbl_country" EntitySet="tbl_country" />
+            <End Role="tbl_state" EntitySet="tbl_state" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_country">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="country" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_rajesh">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="varchar" MaxLength="50" />
+          <Property Name="lname" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_state">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="state" Type="varchar" MaxLength="50" />
+          <Property Name="cnid" Type="int" />
+        </EntityType>
+        <Association Name="FK_tbl_state_tbl_country">
+          <End Role="tbl_country" Type="db_rajeshModel.Store.tbl_country" Multiplicity="0..1" />
+          <End Role="tbl_state" Type="db_rajeshModel.Store.tbl_state" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_country">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_state">
+              <PropertyRef Name="cnid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_rajeshModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="db_rajeshEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_country" EntityType="db_rajeshModel.tbl_country" />
+          <EntitySet Name="tbl_rajesh" EntityType="db_rajeshModel.tbl_rajesh" />
+          <EntitySet Name="tbl_state" EntityType="db_rajeshModel.tbl_state" />
+          <AssociationSet Name="FK_tbl_state_tbl_country" Association="db_rajeshModel.FK_tbl_state_tbl_country">
+            <End Role="tbl_country" EntitySet="tbl_country" />
+            <End Role="tbl_state" EntitySet="tbl_state" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_country">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tbl_state" Relationship="db_rajeshModel.FK_tbl_state_tbl_country" FromRole="tbl_country" ToRole="tbl_state" />
+        </EntityType>
+        <EntityType Name="tbl_rajesh">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="lname" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbl_state">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="state" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="cnid" Type="Int32" />
+          <NavigationProperty Name="tbl_country" Relationship="db_rajeshModel.FK_tbl_state_tbl_country" FromRole="tbl_state" ToRole="tbl_country" />
+        </EntityType>
+        <Association Name="FK_tbl_state_tbl_country">
+          <End Role="tbl_country" Type="db_rajeshModel.tbl_country" Multiplicity="0..1" />
+          <End Role="tbl_state" Type="db_rajeshModel.tbl_state" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_country">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tbl_state">
+              <PropertyRef Name="cnid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_rajeshModelStoreContainer" CdmEntityContainer="db_rajeshEntities">
+          <EntitySetMapping Name="tbl_country">
+            <EntityTypeMapping TypeName="db_rajeshModel.tbl_country">
+              <MappingFragment StoreEntitySet="tbl_country">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="country" ColumnName="country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_rajesh">
+            <EntityTypeMapping TypeName="db_rajeshModel.tbl_rajesh">
+              <MappingFragment StoreEntitySet="tbl_rajesh">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_state">
+            <EntityTypeMapping TypeName="db_rajeshModel.tbl_state">
+              <MappingFragment StoreEntitySet="tbl_state">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="cnid" ColumnName="cnid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="db_rajeshModel.tbl_country" Width="1.5" PointX="0.75" PointY="1" Height="1.5956835937500002" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rajeshModel.tbl_rajesh" Width="1.5" PointX="0.75" PointY="3.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rajeshModel.tbl_state" Width="1.5" PointX="3" PointY="0.875" Height="1.7879850260416665" IsExpanded="true" />
+        <AssociationConnector Association="db_rajeshModel.FK_tbl_state_tbl_country" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.7978417968750002" />
+          <ConnectorPoint PointX="3" PointY="1.7978417968750002" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

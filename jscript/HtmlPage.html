@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        function cansubmit() {
+            var pw = document.getElementById("txtpwd");
+            var cpwd = document.getElementById("cpwd");
+
+            if (pw == cpwd) {
+                return true;
+            }
+            else {
+                alert("Password and confirmed password not match");
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>

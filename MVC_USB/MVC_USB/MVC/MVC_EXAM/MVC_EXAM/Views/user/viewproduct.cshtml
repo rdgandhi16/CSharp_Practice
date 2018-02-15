@@ -1,0 +1,61 @@
+﻿@model IEnumerable< MVC_EXAM.Models.pclass>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>viewproduct</title>
+</head>
+<body>
+    <div>
+
+        <table>
+            @foreach (var item in Model)
+            {
+             <tr>
+                <td>
+                    Product Name:
+                </td>
+                <td>
+                    @Html.DisplayFor(v=>item.pname)
+                </td>     
+                <td>
+                    Product Category
+                </td>
+              @*  <td>
+                    @Html.DropDownListFor(v => item.pcategory, new SelectList(ViewBag.cat, "value", "text"), "Select Category", new {onchange = "document.location.href = '/user/viewproduct?id=' + this.options[this.selectedIndex].value;" })
+                </td>*@
+                 <td>
+                    @Html.DisplayFor(v=>item.catname)
+
+                 </td>
+                <td>
+                    Product Price
+                </td>
+                <td>
+                    @Html.DisplayFor(v=>item.pprice)
+                </td>
+                <td>
+                    Product Detail:
+                </td>
+                <td>
+                    @Html.DisplayFor(v=>item.pdetail)
+                </td>
+                <td>
+                    Product Image
+                </td>
+                <td>
+                    <img src="@Url.Content(item.pimage)" height="50px" width="50px" />
+                </td>
+            </tr>  
+            }
+            
+        </table>
+    </div>
+</body>
+</html>

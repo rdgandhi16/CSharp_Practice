@@ -1,0 +1,42 @@
+﻿@model templateeditMVC.Models.first
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>demo</title>
+    <style type="text/css">
+        .top {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+
+            <tr>
+                <td>Firstname:</td>
+                <td>
+                    @Html.TextBoxFor(v => v.fname, new { @class = "top" })
+                </td>
+            </tr>
+            <tr>
+                <td>Lastname:</td>
+                <td>
+                    @Html.TextBoxFor(v => v.lname, new { @style = "color:red" })
+                </td>
+            </tr>
+            @using(Html.BeginForm()){
+            @Html.Action("pv","Default1")
+
+            }
+        </table>
+    </div>
+</body>
+</html>

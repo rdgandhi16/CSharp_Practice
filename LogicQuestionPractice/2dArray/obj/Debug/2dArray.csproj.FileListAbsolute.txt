@@ -1,0 +1,6 @@
+G:\C#.net\LogicQuestionPractice\2dArray\bin\Debug\2dArray.exe.config
+G:\C#.net\LogicQuestionPractice\2dArray\bin\Debug\2dArray.exe
+G:\C#.net\LogicQuestionPractice\2dArray\bin\Debug\2dArray.pdb
+G:\C#.net\LogicQuestionPractice\2dArray\obj\Debug\2dArray.csprojResolveAssemblyReference.cache
+G:\C#.net\LogicQuestionPractice\2dArray\obj\Debug\2dArray.exe
+G:\C#.net\LogicQuestionPractice\2dArray\obj\Debug\2dArray.pdb

@@ -1,0 +1,4 @@
+E:\NOVbatch16\oopsconcept\static\bin\Debug\@static.exe
+E:\NOVbatch16\oopsconcept\static\bin\Debug\@static.pdb
+E:\NOVbatch16\oopsconcept\static\obj\x86\Debug\@static.exe
+E:\NOVbatch16\oopsconcept\static\obj\x86\Debug\@static.pdb

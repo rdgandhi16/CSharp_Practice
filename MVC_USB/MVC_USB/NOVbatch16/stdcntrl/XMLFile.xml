@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>http://localhost:1048/stdcntrl/Chrysanthemum.jpg</ImageUrl>
+    <NavigateUrl>https://www.google.com</NavigateUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:1048/stdcntrl/Hydrangeas.jpg</ImageUrl>
+    <NavigateUrl>https://www.google.com</NavigateUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:1048/stdcntrl/Lighthouse.jpg</ImageUrl>
+    <NavigateUrl>https://www.google.com</NavigateUrl>
+  </Ad>
+
+</Advertisements>

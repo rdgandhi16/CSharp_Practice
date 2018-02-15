@@ -1,0 +1,23 @@
+﻿p
+{
+    color: Green;
+    font-family: @Kozuka Mincho Pr6N M;
+}
+.tops
+{
+    color: Aqua;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+.vishal
+{
+    color: Aqua;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+#anim
+{
+    color: Pink;
+    font-family: Times New Roman;
+    font-weight: bold;
+}

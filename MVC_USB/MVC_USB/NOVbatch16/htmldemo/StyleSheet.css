@@ -1,0 +1,29 @@
+﻿h1
+{
+    color: Blue;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.c1
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+    color: Gray;
+}
+.c2
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+    color: Gray;
+}
+
+#id1
+{
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+    color:Brown;
+}

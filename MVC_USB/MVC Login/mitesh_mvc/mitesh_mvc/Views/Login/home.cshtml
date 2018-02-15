@@ -1,0 +1,23 @@
+﻿@model mitesh_mvc.Models.login
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>home</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm()){
+            
+        @Html.DisplayFor(v=>v.uname)
+        <input id="Submit1" type="submit" value="LogOut" />
+        }
+    </div>
+</body>
+</html>

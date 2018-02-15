@@ -1,0 +1,4 @@
+2+ years of rapid web development using HTML4/5, JavaScript, JQuery, CSS3, ASP.NET, C#, and T-SQL preferred
+Proven knowledge of .NET experience (Web forms, MVC, Entity Framework, etc.) as well as a solid understanding of Object Oriented Design and Programming
+A solid understanding of web application development process from user interface to relational database structures
+Demonstrates ability to communicate effectively in both technical and business environments

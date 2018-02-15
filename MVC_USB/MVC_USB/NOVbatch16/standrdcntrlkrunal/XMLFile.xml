@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>localhost:1040/standrdcntrlkrunal/Hydrangeas.jpg </ImageUrl>
+    <NavigateUrl>https://www.google.co.in</NavigateUrl>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>http://standrdcntrlkrunal/Hydrangeas.jpg </ImageUrl>
+    <NavigateUrl>https://www.google.co.in</NavigateUrl>
+  </Ad>
+</Advertisements>

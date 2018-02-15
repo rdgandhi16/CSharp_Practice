@@ -1,0 +1,37 @@
+﻿@model MVC_EXAM.Models.pclass
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addcat</title>
+</head>
+<body>
+    <div>
+        @ViewBag.msg
+        @using (Html.BeginForm())
+        {
+        <table >
+            <tr>
+                <td>
+                    Catname
+                </td>
+                <td>
+                    @Html.TextBoxFor(v=>v.catname)
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+        }
+    </div>
+</body>
+</html>

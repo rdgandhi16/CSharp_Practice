@@ -1,0 +1,4 @@
+E:\NOVbatch16\otheroopsconcept25dec\indexer\bin\Debug\indexer.exe
+E:\NOVbatch16\otheroopsconcept25dec\indexer\bin\Debug\indexer.pdb
+E:\NOVbatch16\otheroopsconcept25dec\indexer\obj\x86\Debug\indexer.exe
+E:\NOVbatch16\otheroopsconcept25dec\indexer\obj\x86\Debug\indexer.pdb

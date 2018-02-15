@@ -1,0 +1,4 @@
+E:\NOVbatch16\otheroopsconcept25dec\delegate\bin\Debug\@delegate.exe
+E:\NOVbatch16\otheroopsconcept25dec\delegate\bin\Debug\@delegate.pdb
+E:\NOVbatch16\otheroopsconcept25dec\delegate\obj\x86\Debug\@delegate.exe
+E:\NOVbatch16\otheroopsconcept25dec\delegate\obj\x86\Debug\@delegate.pdb

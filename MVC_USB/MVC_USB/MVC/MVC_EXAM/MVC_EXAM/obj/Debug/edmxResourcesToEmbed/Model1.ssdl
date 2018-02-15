@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_rinkal_examModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="db_rinkal_examModelStoreContainer">
+    <EntitySet Name="tbl_category" EntityType="db_rinkal_examModel.Store.tbl_category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_product" EntityType="db_rinkal_examModel.Store.tbl_product" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tbl_category">
+    <Key>
+      <PropertyRef Name="catid" />
+    </Key>
+    <Property Name="catid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="catname" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_product">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pname" Type="varchar" MaxLength="50" />
+    <Property Name="pcategory" Type="int" />
+    <Property Name="pprice" Type="int" />
+    <Property Name="pdetail" Type="varchar" MaxLength="50" />
+    <Property Name="pimage" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

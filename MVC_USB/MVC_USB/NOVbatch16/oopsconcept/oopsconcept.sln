@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oopsconcept", "oopsconcept\oopsconcept.csproj", "{CCB29EF9-C171-4697-86F1-8E7BE56567F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twidimarray", "twidimarray\twidimarray.csproj", "{E88598B1-F326-465E-A4EB-A2535B43E86C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oops", "oops\oops.csproj", "{DEA8C68A-08B6-45EC-8E9A-89E3942F77A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "constructor", "constructor\constructor.csproj", "{02F36D6F-56E3-4E42-A2AA-A61BCF184AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "static", "static\static.csproj", "{E892D893-6A68-4CB2-8FA5-CA76C15B0A72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inheritance", "inheritance\inheritance.csproj", "{24F1CF31-D83C-4E9C-A5DA-CF4B3DB6E7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "methodoverload", "methodoverload\methodoverload.csproj", "{D2E05B43-5AB9-4678-AE4E-A71CF325E6F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCB29EF9-C171-4697-86F1-8E7BE56567F9}.Debug|x86.ActiveCfg = Debug|x86
+		{CCB29EF9-C171-4697-86F1-8E7BE56567F9}.Debug|x86.Build.0 = Debug|x86
+		{CCB29EF9-C171-4697-86F1-8E7BE56567F9}.Release|x86.ActiveCfg = Release|x86
+		{CCB29EF9-C171-4697-86F1-8E7BE56567F9}.Release|x86.Build.0 = Release|x86
+		{E88598B1-F326-465E-A4EB-A2535B43E86C}.Debug|x86.ActiveCfg = Debug|x86
+		{E88598B1-F326-465E-A4EB-A2535B43E86C}.Debug|x86.Build.0 = Debug|x86
+		{E88598B1-F326-465E-A4EB-A2535B43E86C}.Release|x86.ActiveCfg = Release|x86
+		{E88598B1-F326-465E-A4EB-A2535B43E86C}.Release|x86.Build.0 = Release|x86
+		{DEA8C68A-08B6-45EC-8E9A-89E3942F77A2}.Debug|x86.ActiveCfg = Debug|x86
+		{DEA8C68A-08B6-45EC-8E9A-89E3942F77A2}.Debug|x86.Build.0 = Debug|x86
+		{DEA8C68A-08B6-45EC-8E9A-89E3942F77A2}.Release|x86.ActiveCfg = Release|x86
+		{DEA8C68A-08B6-45EC-8E9A-89E3942F77A2}.Release|x86.Build.0 = Release|x86
+		{02F36D6F-56E3-4E42-A2AA-A61BCF184AF9}.Debug|x86.ActiveCfg = Debug|x86
+		{02F36D6F-56E3-4E42-A2AA-A61BCF184AF9}.Debug|x86.Build.0 = Debug|x86
+		{02F36D6F-56E3-4E42-A2AA-A61BCF184AF9}.Release|x86.ActiveCfg = Release|x86
+		{02F36D6F-56E3-4E42-A2AA-A61BCF184AF9}.Release|x86.Build.0 = Release|x86
+		{E892D893-6A68-4CB2-8FA5-CA76C15B0A72}.Debug|x86.ActiveCfg = Debug|x86
+		{E892D893-6A68-4CB2-8FA5-CA76C15B0A72}.Debug|x86.Build.0 = Debug|x86
+		{E892D893-6A68-4CB2-8FA5-CA76C15B0A72}.Release|x86.ActiveCfg = Release|x86
+		{E892D893-6A68-4CB2-8FA5-CA76C15B0A72}.Release|x86.Build.0 = Release|x86
+		{24F1CF31-D83C-4E9C-A5DA-CF4B3DB6E7A6}.Debug|x86.ActiveCfg = Debug|x86
+		{24F1CF31-D83C-4E9C-A5DA-CF4B3DB6E7A6}.Debug|x86.Build.0 = Debug|x86
+		{24F1CF31-D83C-4E9C-A5DA-CF4B3DB6E7A6}.Release|x86.ActiveCfg = Release|x86
+		{24F1CF31-D83C-4E9C-A5DA-CF4B3DB6E7A6}.Release|x86.Build.0 = Release|x86
+		{D2E05B43-5AB9-4678-AE4E-A71CF325E6F9}.Debug|x86.ActiveCfg = Debug|x86
+		{D2E05B43-5AB9-4678-AE4E-A71CF325E6F9}.Debug|x86.Build.0 = Debug|x86
+		{D2E05B43-5AB9-4678-AE4E-A71CF325E6F9}.Release|x86.ActiveCfg = Release|x86
+		{D2E05B43-5AB9-4678-AE4E-A71CF325E6F9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

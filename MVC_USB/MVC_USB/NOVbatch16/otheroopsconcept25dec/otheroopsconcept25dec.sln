@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "otheroopsconcept25dec", "otheroopsconcept25dec\otheroopsconcept25dec.csproj", "{6BC0CCE8-FE46-4BB6-B066-D982621EFCE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegate", "delegate\delegate.csproj", "{6D909D9D-84D7-4D23-9928-C439D3195E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "indexer", "indexer\indexer.csproj", "{402B06EA-1AD6-4F19-9F0F-969BA1AF311A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "abstract", "abstract\abstract.csproj", "{2346DB20-7422-41E3-863E-0331E9E82A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface", "interface\interface.csproj", "{1701C3BA-CB5F-47E7-B27B-7EAFDE882668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generic", "generic\generic.csproj", "{BAA77721-A315-4561-BC5D-82DDCAA4CEF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed", "sealed\sealed.csproj", "{A7C23EEC-DCBB-41CB-AD00-115463478F0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BC0CCE8-FE46-4BB6-B066-D982621EFCE2}.Debug|x86.ActiveCfg = Debug|x86
+		{6BC0CCE8-FE46-4BB6-B066-D982621EFCE2}.Debug|x86.Build.0 = Debug|x86
+		{6BC0CCE8-FE46-4BB6-B066-D982621EFCE2}.Release|x86.ActiveCfg = Release|x86
+		{6BC0CCE8-FE46-4BB6-B066-D982621EFCE2}.Release|x86.Build.0 = Release|x86
+		{6D909D9D-84D7-4D23-9928-C439D3195E09}.Debug|x86.ActiveCfg = Debug|x86
+		{6D909D9D-84D7-4D23-9928-C439D3195E09}.Debug|x86.Build.0 = Debug|x86
+		{6D909D9D-84D7-4D23-9928-C439D3195E09}.Release|x86.ActiveCfg = Release|x86
+		{6D909D9D-84D7-4D23-9928-C439D3195E09}.Release|x86.Build.0 = Release|x86
+		{402B06EA-1AD6-4F19-9F0F-969BA1AF311A}.Debug|x86.ActiveCfg = Debug|x86
+		{402B06EA-1AD6-4F19-9F0F-969BA1AF311A}.Debug|x86.Build.0 = Debug|x86
+		{402B06EA-1AD6-4F19-9F0F-969BA1AF311A}.Release|x86.ActiveCfg = Release|x86
+		{402B06EA-1AD6-4F19-9F0F-969BA1AF311A}.Release|x86.Build.0 = Release|x86
+		{2346DB20-7422-41E3-863E-0331E9E82A79}.Debug|x86.ActiveCfg = Debug|x86
+		{2346DB20-7422-41E3-863E-0331E9E82A79}.Debug|x86.Build.0 = Debug|x86
+		{2346DB20-7422-41E3-863E-0331E9E82A79}.Release|x86.ActiveCfg = Release|x86
+		{2346DB20-7422-41E3-863E-0331E9E82A79}.Release|x86.Build.0 = Release|x86
+		{1701C3BA-CB5F-47E7-B27B-7EAFDE882668}.Debug|x86.ActiveCfg = Debug|x86
+		{1701C3BA-CB5F-47E7-B27B-7EAFDE882668}.Debug|x86.Build.0 = Debug|x86
+		{1701C3BA-CB5F-47E7-B27B-7EAFDE882668}.Release|x86.ActiveCfg = Release|x86
+		{1701C3BA-CB5F-47E7-B27B-7EAFDE882668}.Release|x86.Build.0 = Release|x86
+		{BAA77721-A315-4561-BC5D-82DDCAA4CEF8}.Debug|x86.ActiveCfg = Debug|x86
+		{BAA77721-A315-4561-BC5D-82DDCAA4CEF8}.Debug|x86.Build.0 = Debug|x86
+		{BAA77721-A315-4561-BC5D-82DDCAA4CEF8}.Release|x86.ActiveCfg = Release|x86
+		{BAA77721-A315-4561-BC5D-82DDCAA4CEF8}.Release|x86.Build.0 = Release|x86
+		{A7C23EEC-DCBB-41CB-AD00-115463478F0A}.Debug|x86.ActiveCfg = Debug|x86
+		{A7C23EEC-DCBB-41CB-AD00-115463478F0A}.Debug|x86.Build.0 = Debug|x86
+		{A7C23EEC-DCBB-41CB-AD00-115463478F0A}.Release|x86.ActiveCfg = Release|x86
+		{A7C23EEC-DCBB-41CB-AD00-115463478F0A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

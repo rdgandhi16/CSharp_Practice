@@ -1,0 +1,5 @@
+G:\C#.net\LogicQuestionPractice\EvenOdd\bin\Debug\EvenOdd.exe.config
+G:\C#.net\LogicQuestionPractice\EvenOdd\bin\Debug\EvenOdd.exe
+G:\C#.net\LogicQuestionPractice\EvenOdd\bin\Debug\EvenOdd.pdb
+G:\C#.net\LogicQuestionPractice\EvenOdd\obj\Debug\EvenOdd.exe
+G:\C#.net\LogicQuestionPractice\EvenOdd\obj\Debug\EvenOdd.pdb

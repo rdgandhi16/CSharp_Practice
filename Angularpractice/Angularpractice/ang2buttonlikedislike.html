@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html ng-app="mymodule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body ng-controller="mycontroller">
+    <div align="center">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Like
+                    </th>
+                    <th>
+                        Dislike
+                    </th>
+                    <th rowspan="2">
+                        Like/Dislike
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="technology in technologies">
+                    <td>
+                        {{technology.name}}
+                    </td>
+                    <td>
+                        {{technology.like}}
+                    </td>
+                    <td>
+                        {{technology.dislike}}
+                    </td>
+                    <td>
+                        <input type="text" value="like" ng-click="incrementlikes(technology)" />
+                        <input type="text" value="dislike" ng-click="discrementlikes(technology)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

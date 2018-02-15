@@ -1,0 +1,104 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Corporate Blue Theme - Free Website Template</title>
+<meta name="keywords" content="corporate blue, theme, free templates, website templates, CSS, HTML" />
+<meta name="description" content="Corporate Blue Theme is a free website template provided by tooplate.com" />
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript">
+    function clearText(field) {
+        if (field.defaultValue == field.value) field.value = '';
+        else if (field.value == '') field.value = field.defaultValue;
+    }
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+    <div id="tooplate_header_wrapper">
+	<div id="tooplate_header">
+    
+    	<div id="site_title">
+            <h1><a href="http://www.tooplate.com" rel="nofollow"><img src="images/tooplate_logo.png" alt="logo" /><span>Your tagline goes here</span></a></h1>
+        </div> <!-- end of site_title -->
+        
+        <div id="header_right">
+        
+        	<div id="social_box">
+                <ul>
+                    <li><a href="#"><img src="images/facebook.png" alt="facebook" /></a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt="twitter" /></a></li>
+                    <li><a href="#"><img src="images/linkedin.png" alt="linkin" /></a></li>
+                    <li><a href="#"><img src="images/technorati.png" alt="technorati" /></a></li>
+                    <li><a href="#"><img src="images/myspace.png" alt="myspace" /></a></li>                
+                </ul>
+                <div class="cleaner"></div>
+			</div>   
+			         
+             <div id="search_box">
+                <form action="#" method="get">
+                    <input type="text" value="Search" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                  <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+                </form>
+            </div>
+            	
+        </div>
+    
+    </div>
+</div>
+
+<div id="tooplate_middle_wrapper">
+	<div id="tooplate_middle">
+    
+    	<img src="images/tooplate_image_01.jpg" alt="Image 01" />
+        
+        <div id="middle_content">
+        	<h2>Lorem ipsum dolor sit amet</h2>
+            <p>Nullam in justo lacus, id viverra elit. Ut dignissim auctor purus, id vestibulum turpis rutrum eget. Maecenas ut ipsum pellentesque purus ullamcorper fringilla. Nunc in turpis non nisi egestas convallis in at massa.</p>
+            <div class="wwu_btn"><a href="#"></a></div>
+        </div>
+    
+    </div>
+</div>
+
+ <div id="tooplate_menu">
+                
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>    	
+
+	<div class="cleaner"></div>
+ <!-- end of templatetooplate_menu -->
+    </div>
+
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+        <div id="tooplate_footer_wrapper">
+
+     <div id="tooplate_footer">
+    
+        Copyright © 2048 <a href="#">Company Name</a>
+    
+    </div> 
+     <!-- end of templatetooplate_footer -->
+</div> 
+    </div>
+    </form>
+</body>
+</html>

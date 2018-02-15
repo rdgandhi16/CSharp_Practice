@@ -1,0 +1,56 @@
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\MVC_ALL_Cntrl_DB.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\MVC_ALL_Cntrl_DB.pdb
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\Microsoft.Web.Infrastructure.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\Newtonsoft.Json.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Net.Http.Formatting.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Helpers.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.WebHost.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Mvc.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Razor.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Deployment.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Razor.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\Newtonsoft.Json.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Net.Http.Formatting.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Helpers.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.WebHost.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Mvc.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Razor.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Deployment.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Razor.xml
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\obj\Debug\MVC_ALL_Cntrl_DB.csprojResolveAssemblyReference.cache
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\obj\Debug\MVC_ALL_Cntrl_DB.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\obj\Debug\MVC_ALL_Cntrl_DB.pdb
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\EntityFramework.dll
+c:\users\administrator.fac\documents\visual studio 2012\Projects\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\EntityFramework.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\MVC_ALL_Cntrl_DB.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\MVC_ALL_Cntrl_DB.pdb
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\EntityFramework.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\Microsoft.Web.Infrastructure.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\Newtonsoft.Json.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Net.Http.Formatting.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Helpers.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.WebHost.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Mvc.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Razor.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Deployment.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Razor.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\EntityFramework.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\Newtonsoft.Json.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Net.Http.Formatting.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Helpers.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Http.WebHost.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Mvc.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.Razor.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Deployment.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\bin\System.Web.WebPages.Razor.xml
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\obj\Debug\MVC_ALL_Cntrl_DB.csprojResolveAssemblyReference.cache
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\obj\Debug\MVC_ALL_Cntrl_DB.dll
+\\server1\Vishal\MVC_Support\MVC_ALL_Cntrl_DB\MVC_ALL_Cntrl_DB\obj\Debug\MVC_ALL_Cntrl_DB.pdb

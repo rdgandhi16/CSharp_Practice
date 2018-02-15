@@ -1,0 +1,4 @@
+E:\NOVbatch16\otheroopsconcept25dec\interface\bin\Debug\@interface.exe
+E:\NOVbatch16\otheroopsconcept25dec\interface\bin\Debug\@interface.pdb
+E:\NOVbatch16\otheroopsconcept25dec\interface\obj\x86\Debug\@interface.exe
+E:\NOVbatch16\otheroopsconcept25dec\interface\obj\x86\Debug\@interface.pdb

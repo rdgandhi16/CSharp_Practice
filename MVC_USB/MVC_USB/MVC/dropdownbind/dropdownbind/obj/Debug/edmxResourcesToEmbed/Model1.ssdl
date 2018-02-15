@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_28decModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="db_28decModelStoreContainer">
+    <EntitySet Name="tbl_city" EntityType="db_28decModel.Store.tbl_city" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_state" EntityType="db_28decModel.Store.tbl_state" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__tbl_city__sid__07F6335A" Association="db_28decModel.Store.FK__tbl_city__sid__07F6335A">
+      <End Role="tbl_state" EntitySet="tbl_state" />
+      <End Role="tbl_city" EntitySet="tbl_city" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbl_city">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cityname" Type="varchar" MaxLength="50" />
+    <Property Name="sid" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="statename" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__tbl_city__sid__07F6335A">
+    <End Role="tbl_state" Type="db_28decModel.Store.tbl_state" Multiplicity="0..1" />
+    <End Role="tbl_city" Type="db_28decModel.Store.tbl_city" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_city">
+        <PropertyRef Name="sid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

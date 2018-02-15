@@ -1,0 +1,6 @@
+G:\C#.net\LogicQuestionPractice\withoutsortarray\bin\Debug\withoutsortarray.exe.config
+G:\C#.net\LogicQuestionPractice\withoutsortarray\bin\Debug\withoutsortarray.exe
+G:\C#.net\LogicQuestionPractice\withoutsortarray\bin\Debug\withoutsortarray.pdb
+G:\C#.net\LogicQuestionPractice\withoutsortarray\obj\Debug\withoutsortarray.csprojResolveAssemblyReference.cache
+G:\C#.net\LogicQuestionPractice\withoutsortarray\obj\Debug\withoutsortarray.exe
+G:\C#.net\LogicQuestionPractice\withoutsortarray\obj\Debug\withoutsortarray.pdb

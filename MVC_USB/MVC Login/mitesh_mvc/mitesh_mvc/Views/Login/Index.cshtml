@@ -1,0 +1,61 @@
+﻿@model mitesh_mvc.Models.login
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <center>
+            <h1>Login Page</h1>
+            <table border="1" align="center">
+                <tr>
+                    <td>
+                        User Name
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(v => v.uname)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(v => v.pass)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input id="Submit1" type="submit" value="Login" />
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Forgot Password","forgot_password")
+                    </td>
+                    <td>
+                        @Html.CheckBoxFor(v=>v.remem,"Remember me") Remember Me 
+                    </td>
+                </tr>
+                <tr>
+                     <td colspan="2">
+                        @Html.DisplayFor(v=>v.msg)
+                    </td>
+                </tr>
+            </table>
+                </center>
+        }
+    </div>
+</body>
+</html>

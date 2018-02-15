@@ -1,0 +1,4 @@
+E:\NOVbatch16\oopsconcept\twidimarray\bin\Debug\twidimarray.exe
+E:\NOVbatch16\oopsconcept\twidimarray\bin\Debug\twidimarray.pdb
+E:\NOVbatch16\oopsconcept\twidimarray\obj\x86\Debug\twidimarray.exe
+E:\NOVbatch16\oopsconcept\twidimarray\obj\x86\Debug\twidimarray.pdb

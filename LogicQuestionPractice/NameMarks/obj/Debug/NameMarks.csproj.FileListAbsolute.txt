@@ -1,0 +1,5 @@
+G:\C#.net\LogicQuestionPractice\NameMarks\bin\Debug\NameMarks.exe.config
+G:\C#.net\LogicQuestionPractice\NameMarks\bin\Debug\NameMarks.exe
+G:\C#.net\LogicQuestionPractice\NameMarks\bin\Debug\NameMarks.pdb
+G:\C#.net\LogicQuestionPractice\NameMarks\obj\Debug\NameMarks.exe
+G:\C#.net\LogicQuestionPractice\NameMarks\obj\Debug\NameMarks.pdb

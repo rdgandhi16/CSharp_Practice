@@ -1,0 +1,58 @@
+﻿@model  MVC_ALL_Cntrl_DB.Models.admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div  style="border:dotted;width:300px;text-align:justify;margin-left:30em">
+
+        <table>
+            <tr>
+                <td>FirstName:
+                </td>
+                <td>
+                    @Html.TextBoxFor(v=>v.fname)
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:
+                </td>
+                <td>
+                    @Html.Action("pv_gender", "User")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hobby:
+                </td>
+                <td>
+                    @Html.Action("pv_hobby", "User")
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Subject:
+                </td>
+                <td>
+                   @Html.ListBoxFor(v => v.sub, new SelectList(ViewBag.sub,"value","text"))
+                </td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    @Html.DropDownListFor(v => v.state, new SelectList(ViewBag.state, "value", "text"), "--Select State--")
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

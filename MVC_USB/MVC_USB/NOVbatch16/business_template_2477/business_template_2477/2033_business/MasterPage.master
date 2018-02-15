@@ -1,0 +1,96 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Business Website Template</title> 
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2033 Business
+http://www.tooplate.com/view/2033-business
+-->
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+    <div id="tooplate_header_wrapper">
+
+    <div id="tooplate_header">
+    
+        <div id="site_title">
+        
+        	<h1><a href="#"><img src="images/tooplate_logo.png" alt="business template" /><span>Free HTML Template</span></a></h1>
+        
+        </div> <!-- end of site_title -->
+        
+        <div id="header_phone_no">
+
+			Toll Free: <span>08 324 552 409</span>
+        
+        </div>
+        
+        <div class="cleaner_h10"></div>
+        
+        <div id="tooplate_menu">
+        	
+            <div id="home_menu"><a href="#"></a></div>
+                
+            <ul>
+                <li><a href="home.aspx" class="current">Home</a></li>
+                <li><a href="about.aspx">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    	
+        
+        </div> <!-- end of tooplate_menu -->
+        
+    </div>	  
+</div>
+<div id="tooplate_middle_wrapper1">
+	<div id="tooplate_middle_wrapper2">
+		<div id="tooplate_middle">
+
+			<h1>BE ACTIVE<span>with the best coffee</span></h1>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut lorem id mauris cursus pellentesque. Donec lobortis magna at orci blandit ac lobortis ipsum vestibulum.</p>
+			
+			<a href="#"><span>+</span> More</a>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+        <div id="tooplate_footer_wrapper">
+
+     <div id="tooplate_footer">
+    
+        Copyright © 2048 <a href="#">Company Name</a> - Design: <a href="http://www.tooplate.com">tooplate</a>
+    
+    </div> <!-- end of tooplate_footer -->
+
+</div>
+
+
+    </div>
+    </form>
+</body>
+</html>
